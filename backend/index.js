@@ -39,4 +39,6 @@ app.post('/api/anthropic', async (req, res) => {
   }
 });
 
-app.listen(5030, () => console.log('Backend corriendo en puerto 5030'));
+const PORT = process.env.PORT || 5030;
+app.listen(PORT, () => console.log(`Backend corriendo en puerto ${PORT}`));
+
