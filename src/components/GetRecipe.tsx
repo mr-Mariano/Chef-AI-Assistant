@@ -28,7 +28,7 @@ const GetRecipe = ({ ingredients, setRecipe }: GetRecipeProps) => {
         setLoading(true);
         const ingredientsList = ingredients.map(ingredient => ingredient.name).join(', ');
 
-        const response = await fetch('/api/anthropic', {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
