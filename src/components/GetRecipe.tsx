@@ -47,7 +47,7 @@ const GetRecipe = ({ ingredients, setRecipe }: GetRecipeProps) => {
         <div className="w-full flex flex-col justify-center items-center my-22 md:m-0">
         <Card className="px-5 text-start w-full">
             <CardHeader className="flex flex-row items-center justify-center p-0">
-                <div className=" hidden md:flex text-xs md:text-md w-1/2 flex flex-col items-start justify-center gap-2">
+                <div className=" hidden md:flex text-xs md:text-md w-1/2 flex-col items-start justify-center gap-2">
                     <CardTitle>Ready for a recipe? </CardTitle>
                     <CardDescription className="hidden md:flex">Generate a recipe from the collections of given ingredients.</CardDescription>
                 </div>
